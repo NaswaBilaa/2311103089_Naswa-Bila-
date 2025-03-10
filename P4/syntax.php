@@ -1,0 +1,1 @@
+<?php echo "Hello, naswa cantikku sayangku manisku bagaikan bola salju!"; ?>
