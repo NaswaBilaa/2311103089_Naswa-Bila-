@@ -6,25 +6,37 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f2;
     padding: 20px;
+    position: relative;
 }
 
 .container {
     max-width: 800px;
-    background: white;
+    background: #fff0f5;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto 20px auto;
+    border: 2px solid #ff66b2;
+    position: relative;
 }
 
 h2,
 h3 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #d63384;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(214, 51, 132, 0.3);
+}
+
+h2::after {
+    content: ' 💖';
+    font-size: 2rem;
 }
 
 /* Form Styling */
@@ -37,6 +49,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    color: #ff4081;
 }
 
 input,
@@ -44,18 +57,19 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #ff99cc;
+    border-radius: 8px;
     font-size: 14px;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
+    background: #fff5fa;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: #28a745;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+    border-color: #ff4081;
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.4);
 }
 
 textarea {
@@ -77,19 +91,20 @@ textarea {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #ff66b2;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     min-width: 120px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #ff4081;
+    transform: scale(1.05);
 }
 
 /* Table Styling */
@@ -106,7 +121,7 @@ table {
 
 th,
 td {
-    border: 1px solid #ddd;
+    border: 1px solid #ff99cc;
     padding: 12px;
     text-align: left;
     vertical-align: middle;
@@ -114,18 +129,18 @@ td {
 }
 
 th {
-    background-color: #28a745;
+    background-color: #ff66b2;
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #ffe6f2;
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #ffd1e8;
 }
 
 /* Responsif untuk layar kecil */
